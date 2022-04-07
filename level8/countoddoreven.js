@@ -12,14 +12,25 @@ function countOdd(number){
 
         if ( i % 2 === 1){
 
-            countResult.push(i);
+           countResult.push(i);
+         
           
         }
             }
-    return countResult.length;
+            let result = countResult.length;
+    return result;
 }
 
 console.log(countOdd(5));
 console.log(countOdd(15));
 console.log(countOdd(15023));
+
+
+// other solution
+
+function countNumber(n){
+    let odd = Math.floor(n/2);
+    return odd;
+}
+console.log(countNumber(15));
 
