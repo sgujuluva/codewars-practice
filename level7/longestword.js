@@ -19,3 +19,18 @@ let countItems = [];
     return longestWordCount;
 }
 console.log(longestWord(['simple', 'is', 'better',  'complex','than']))
+
+//other solutions
+
+/* function longest(words) {
+  return words.reduce((a,b) => a.length > b.length ? a : b).length;
+} */
+
+/* function longest(words) {
+  let l = 0;
+    for(let i = 0; i < words.length; i++) {
+      if (l < words[i].length)
+      l = words[i].length;
+    }
+  return l;
+} */
