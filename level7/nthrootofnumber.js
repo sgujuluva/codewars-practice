@@ -7,14 +7,8 @@ x = 6.25  n = 2  -->  2.5  #                             2.5^2 = 6.25*/
 
 let nthRoot = (x,n) => {
 
-    let r = Math.sqrt(x);
-//console.log(r);
-//let result = r/n;
-    if(r/n === 0) {
-        console.log `The nth square toot of ${x} is: ${r/n}`;
-    };
-    
-    
+  let r = Math.pow(x,1/n);
+  return r;  
 
 }
-console.log(nthRoot(256,4))
+console.log(nthRoot(256,4));

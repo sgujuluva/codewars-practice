@@ -31,7 +31,8 @@ let stringCount = (stringInput) => {
       
     }
 
-    return [uppercaseAlphabetsCount].concat(lowercaseAlphabetsCount).concat(numbersCount).concat(specialCount);
+    //return [uppercaseAlphabetsCount].concat(lowercaseAlphabetsCount).concat(numbersCount).concat(specialCount);
     //return result;
+    return [uppercaseAlphabetsCount, lowercaseAlphabetsCount, numbersCount, specialCount];
 }
 console.log(stringCount("*'&ABCDabcde12345"));
