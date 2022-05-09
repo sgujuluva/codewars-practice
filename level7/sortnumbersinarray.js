@@ -4,19 +4,28 @@ For example:
 
 solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 solution(null); // should return [] */
-
-function solution(numbers){
-
-    if ( numbers === null){
-        return [];
-    }else {
-
-       numbers.sort();
-        return numbers;
+let numbers = [1, 2, 10, 50, 5];
+let sortedNumbers = numbers.sort((a,b) => {
+    if(a>b){
+        return 1;
+    }else if(a < b){
+        return -1;
+    }else{
+        return 0;
     }
+})
 
+//console.log(solution(null));
+console.log(sortedNumbers);
+//console.log(solution ([1, 2, 10, 50, 5]));
 
-}
+// other ways
 
-console.log(solution(null));
-console.log(solution ([1, 2, 10, 50, 5]));
+function solution(nums){
+    if(nums === null){
+      return [];
+    }
+    let result = nums.sort((a,b) => a -b);
+    return result;
+  
+  }

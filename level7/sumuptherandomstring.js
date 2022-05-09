@@ -10,21 +10,8 @@ Sum is 2021.
 
  */
 
-/* function sumFromString(str){
-    // ...
-    let sum = 0;
-    let temp = "0";
-    for ( let i=0; i < str.length;i++){
-        if(!isNaN(String(str[i]))){
-            temp += str[i];
-        }else{
-            sum += parseInt(temp);
-            temp ="0"
-        }
-    }
-    return sum + parseInt(temp);
-  } */
-  function findSum(str)
+
+  /* function findSum(str)
     {
         // A temporary string
         let temp = "0";
@@ -56,4 +43,28 @@ Sum is 2021.
         // numbers
         return sum + parseInt(temp);
     }
-  console.log(findSum("In 2015, I want to know how much does iPhone 6+ cost?"));
+  console.log(findSum("In 2015, I want to know how much does iPhone 6+ cost?")); */
+
+
+  // otherway
+
+
+function numberAdd(str){
+	let strArr = str.split("");
+     let strTemp=0;
+     let numbers = "0123456789"
+     if(!numbers.includes(str)){
+        strTemp = 0;
+    }
+	for(i=0;i<strArr.length;i++){
+		if(!isNaN(strArr[i]) ){
+			strTemp+=parseInt(strArr[i]);
+		}
+        
+    }
+	return strTemp;
+}
+
+console.log(numberAdd('iam2015bar6cat1')) ; //15
+console.log(numberAdd("In 2015, I want to know how much does iPhone 6+ cost")) ;
+console.log(numberAdd("In  I want to know how much does iPhone + cost?")) ;

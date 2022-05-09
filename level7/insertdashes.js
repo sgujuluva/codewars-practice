@@ -4,7 +4,7 @@ function insertDash(num) {
     //code me
     let result = [];
     let numString = num.split("");
-    //console.log(numString);
+    console.log(numString);
     for(let i= 0; i < numString.length; i++ ){
         if(num[i] % 2 !== 0 && num[i +1] % 2 !== 0){
             result.push(num[i] + "-");
